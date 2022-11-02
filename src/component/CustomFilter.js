@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
 import Form from "react-bootstrap/Form";
+import StudentListTabel from "./StudentListTabel";
+
 
 export default function CustomFilter() {
+  const [count, setCount] = useState(false);
   return (
-    <div className="container bg-dark text-white mt-4 p-3">
+    <div>    <div className="container bg-dark text-white mt-4 p-3">
       <h1 className="h1">Filter</h1>
       <div className="row">
         <div className="col-sm-3">
@@ -45,7 +48,19 @@ export default function CustomFilter() {
             <option value="3">Three</option>
           </Form.Select>
         </div>
+
+
+      </div>
+      <div className="row mt-2">
+      <div className="col">
+        <button className="btn btn-primary " onClick={setCount(!count)}>Search</button>
+        </div>
       </div>
     </div>
+    {count ? <StudentListTabel  />: <span></span>}
+    
+    
+    </div>
+
   );
 }

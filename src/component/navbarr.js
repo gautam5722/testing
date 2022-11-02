@@ -5,7 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 import React from "react";
 
-export default function navbarr() {
+export default function Navbarr() {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container>

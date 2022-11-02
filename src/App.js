@@ -3,7 +3,6 @@ import "./App.css";
 // import navbarr from "./component/navbarr";
 import Navbarr from "./component/Navbarr";
 import CustomFilter from "./component/CustomFilter";
-import StudentListTabel from "./component/StudentListTabel";
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
       <Navbarr />
       <CustomFilter />
 
-      <StudentListTabel />
     </div>
   );
 }
